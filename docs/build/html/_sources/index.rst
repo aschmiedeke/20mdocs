@@ -78,7 +78,7 @@ The GBO 20m User Documentation Hub is a prototype documentation system under act
 
         :octicon:`tools;3em;sd-text-primary` **References**
 
-        Nitty-gritty technical descriptions of how the GBT works. 
+        Nitty-gritty technical descriptions of how the 20m works. 
         
         Most useful when you need detailed information about different 20m
         components or applications. 

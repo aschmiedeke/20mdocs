@@ -28,7 +28,7 @@ These guides provide information on how to perform general and common tasks with
             :outline:
             :click-parent:
 
-            GBT observing
+            20m observing
 
 
 .. toctree::

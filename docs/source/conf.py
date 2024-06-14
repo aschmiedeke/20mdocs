@@ -94,14 +94,3 @@ html_logo = '_static/GBO-vertical-PGGradient.svg'
 # -- Options for latexpdf output ---------------------------------------------
 
 latex_use_parts=True
-
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title, author, document class [howto/manual]).
-#latex_documents = [
-#  ('tutorials', 'Tutorials.tex', ur'GBTdocs Tutorials', ur'The GBTdocs Team', 'manual', False),
-#  ]
-#
-#  ('how-tos', 'HowToGuides.tex', ur'GBTdocs How-To Guides', ur'The GBTdocs Team', 'manual', False),
-#  ('references', 'ReferenceGuides.tex', ur'GBTdocs Reference Guides', ur'The GBTdocs Team', 'manual', False),
-#  ('explanations', 'ExplanationGuides.tex', ur'GBTdocs Explanation Guides', ur'The GBTdocs Team', 'manual', False),
-#]
