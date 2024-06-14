@@ -1,0 +1,798 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>20m observations 101 &#8212; 20m Docs 0.1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/tabs.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'how-tos/general_guides/20m_observing';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Explanation Material" href="../../explanations/index.html" />
+    <link rel="prev" title="How-To Guides" href="../index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/GBO-vertical-PGGradient.svg" class="logo__image only-light" alt="20m Docs 0.1 documentation - Home"/>
+    <script>document.write(`<img src="../../_static/GBO-vertical-PGGradient.svg" class="logo__image only-dark" alt="20m Docs 0.1 documentation - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html"><svg aria-hidden="true" class="sd-octicon sd-octicon-mortar-board sd-text-secondary" height="2.0em" version="1.1" viewbox="0 0 24 24" width="2.0em"><path d="M12.292 2.06a.75.75 0 00-.584 0L.458 6.81a.75.75 0 000 1.38L4.25 9.793v3.803a2.901 2.901 0 00-1.327.757c-.579.58-.923 1.41-.923 2.43v4.5c0 .248.128.486.335.624.06.04.117.073.22.124.124.062.297.138.52.213.448.149 1.09.288 1.925.288s1.477-.14 1.925-.288c.223-.075.396-.15.52-.213a2.11 2.11 0 00.21-.117A.762.762 0 008 21.28v-4.5c0-1.018-.344-1.85-.923-2.428a2.9 2.9 0 00-1.327-.758v-3.17l5.958 2.516a.75.75 0 00.584 0l5.208-2.2v4.003a2.552 2.552 0 01-.079.085 4.057 4.057 0 01-.849.65c-.826.488-2.255 1.021-4.572 1.021-.612 0-1.162-.037-1.654-.1a.75.75 0 00-.192 1.487c.56.072 1.173.113 1.846.113 2.558 0 4.254-.592 5.334-1.23.538-.316.914-.64 1.163-.896a2.84 2.84 0 00.392-.482h.001A.75.75 0 0019 15v-4.892l4.542-1.917a.75.75 0 000-1.382l-11.25-4.75zM5 15c-.377 0-.745.141-1.017.413-.265.265-.483.7-.483 1.368v4.022c.299.105.797.228 1.5.228s1.201-.123 1.5-.228V16.78c0-.669-.218-1.103-.483-1.368A1.431 1.431 0 005 15zm7-3.564L2.678 7.5 12 3.564 21.322 7.5 12 11.436z" fill-rule="evenodd"></path></svg> Tutorials</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html"><svg aria-hidden="true" class="sd-octicon sd-octicon-terminal sd-text-success" height="2.0em" version="1.1" viewbox="0 0 24 24" width="2.0em"><path d="M9.25 12a.75.75 0 01-.22.53l-2.75 2.75a.75.75 0 01-1.06-1.06L7.44 12 5.22 9.78a.75.75 0 111.06-1.06l2.75 2.75c.141.14.22.331.22.53zm2 2a.75.75 0 000 1.5h5a.75.75 0 000-1.5h-5z"></path><path d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0122.25 21H1.75A1.75 1.75 0 010 19.25V4.75zm1.75-.25a.25.25 0 00-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 00.25-.25V4.75a.25.25 0 00-.25-.25H1.75z" fill-rule="evenodd"></path></svg> How-To Guides</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">20m observations 101</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../explanations/index.html"><svg aria-hidden="true" class="sd-octicon sd-octicon-repo sd-text-danger" height="2.0em" version="1.1" viewbox="0 0 24 24" width="2.0em"><path d="M3 2.75A2.75 2.75 0 015.75 0h14.5a.75.75 0 01.75.75v20.5a.75.75 0 01-.75.75h-6a.75.75 0 010-1.5h5.25v-4H6A1.5 1.5 0 004.5 18v.75c0 .716.43 1.334 1.05 1.605a.75.75 0 01-.6 1.374A3.25 3.25 0 013 18.75v-16zM19.5 1.5V15H6c-.546 0-1.059.146-1.5.401V2.75c0-.69.56-1.25 1.25-1.25H19.5z" fill-rule="evenodd"></path><path d="M7 18.25a.25.25 0 01.25-.25h5a.25.25 0 01.25.25v5.01a.25.25 0 01-.397.201l-2.206-1.604a.25.25 0 00-.294 0L7.397 23.46a.25.25 0 01-.397-.2v-5.01z"></path></svg> Explanation Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../references/index.html"><svg aria-hidden="true" class="sd-octicon sd-octicon-tools sd-text-primary" height="2.0em" version="1.1" viewbox="0 0 24 24" width="2.0em"><path d="M7.875 2.292a.125.125 0 00-.032.018A7.24 7.24 0 004.75 8.25a7.247 7.247 0 003.654 6.297c.57.327.982.955.941 1.682v.002l-.317 6.058a.75.75 0 11-1.498-.078l.317-6.062v-.004c.006-.09-.047-.215-.188-.296A8.747 8.747 0 013.25 8.25a8.74 8.74 0 013.732-7.169 1.547 1.547 0 011.709-.064c.484.292.809.835.809 1.46v4.714a.25.25 0 00.119.213l2.25 1.385c.08.05.182.05.262 0l2.25-1.385a.25.25 0 00.119-.213V2.478c0-.626.325-1.169.81-1.461a1.547 1.547 0 011.708.064 8.74 8.74 0 013.732 7.17 8.747 8.747 0 01-4.41 7.598c-.14.081-.193.206-.188.296v.004l.318 6.062a.75.75 0 11-1.498.078l-.317-6.058v-.002c-.041-.727.37-1.355.94-1.682A7.247 7.247 0 0019.25 8.25a7.24 7.24 0 00-3.093-5.94.125.125 0 00-.032-.018l-.01-.001c-.003 0-.014 0-.031.01-.036.022-.084.079-.084.177V7.19a1.75 1.75 0 01-.833 1.49l-2.25 1.385a1.75 1.75 0 01-1.834 0l-2.25-1.384A1.75 1.75 0 018 7.192V2.477c0-.098-.048-.155-.084-.176a.062.062 0 00-.031-.011l-.01.001z" fill-rule="evenodd"></path></svg> Reference Guides</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/how-tos/general_guides/20m_observing.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>20m observations 101</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#log-in-to-skynet">Log in to Skynet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-a-new-observation">Start a new observation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-your-observations">Setting up your observations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#select-your-target-source">1. Select your Target Source</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-the-receiver">2. Setup the Receiver</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#low-resolution-mode">Low Resolution Mode</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#high-resolution-mode">High Resolution Mode</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#select-the-path">3. Select the Path</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#track">Track</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#onoff">OnOff</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#daisy">Daisy</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#map">Map</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-your-selection">4. Review your Selection</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="m-observations-101">
+<h1>20m observations 101<a class="headerlink" href="#m-observations-101" title="Permalink to this heading">#</a></h1>
+<p>Observations with the 20m Telescope are carried out remotely using Skynet.</p>
+<section id="log-in-to-skynet">
+<h2>Log in to Skynet<a class="headerlink" href="#log-in-to-skynet" title="Permalink to this heading">#</a></h2>
+<p>Go to <a class="reference external" href="https://skynet.unc.edu/radio_obs">https://skynet.unc.edu/radio_obs</a>.</p>
+<p>You will see this welcome page</p>
+<img alt="../../_images/00_skynet_login_page.png" src="../../_images/00_skynet_login_page.png" />
+<p>Login with your group/account credentials. Once you’re logged in, make sure you’re in the <strong>My Observatory &gt; Radio Observing</strong> section of the website.</p>
+<img alt="../../_images/01_skynet_welcome_radio.png" src="../../_images/01_skynet_welcome_radio.png" />
+</section>
+<section id="start-a-new-observation">
+<h2>Start a new observation<a class="headerlink" href="#start-a-new-observation" title="Permalink to this heading">#</a></h2>
+<p>Click on <strong>Add New Observation</strong> in the top right panel.</p>
+<a class="reference internal image-reference" href="../../_images/02_skynet_radio_newObs.png"><img alt="../../_images/02_skynet_radio_newObs.png" src="../../_images/02_skynet_radio_newObs.png" style="width: 931.2px; height: 582.4px;" /></a>
+<section id="setting-up-your-observations">
+<h3>Setting up your observations<a class="headerlink" href="#setting-up-your-observations" title="Permalink to this heading">#</a></h3>
+<p>Setting up new observations is a four step process. You have to</p>
+<ol class="arabic simple">
+<li><p>Select your target source.</p></li>
+<li><p>Setup the receiver.</p></li>
+<li><p>Select the Path.</p></li>
+<li><p>Review your selection.</p></li>
+</ol>
+</section>
+<section id="select-your-target-source">
+<h3>1. Select your Target Source<a class="headerlink" href="#select-your-target-source" title="Permalink to this heading">#</a></h3>
+<p>You can specify your target source in three different ways:</p>
+<ul class="simple">
+<li><p>Type in your target in the <strong>Target Lookup</strong> box (2nd box from the top on the right) and click <strong>Search</strong>.</p></li>
+<li><p>Click on your target in the skyviewer.</p></li>
+<li><p>Specify the coordinates in the box below the skyviewer.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you specify the Observation Name, include your group number. This will facilitate finding the observations later.</p>
+</div>
+<a class="reference internal image-reference" href="../../_images/03_skynet_addObs_target.png"><img alt="../../_images/03_skynet_addObs_target.png" src="../../_images/03_skynet_addObs_target.png" style="width: 840.8000000000001px; height: 742.4000000000001px;" /></a>
+<p>At the bottom of the page you can see an elevation plot, which tells you when your selected target is observable with the Green Bank 20m telescope.</p>
+<a class="reference internal image-reference" href="../../_images/04_skynet_addObs_target_elevationPlot.png"><img alt="../../_images/04_skynet_addObs_target_elevationPlot.png" src="../../_images/04_skynet_addObs_target_elevationPlot.png" style="width: 546.4px; height: 316.0px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Minimum elevation:</dt><dd><ul>
+<li><p>Use a minimum elevation higher than the default 5 degrees as there are objects surrounding the telescop ethat may block the beam path.</p></li>
+<li><p>Use a minimum elevation of 25 degrees for maps.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Sun avoidance:</dt><dd><ul>
+<li><p>The 20m can pick up radiation from the Sun in the far sidelobes.</p></li>
+<li><p>To avoid this, keep all parts of a map at least 15 degrees away from the Sun.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<p>Finally click the orange <strong>Save and Continue</strong> button to contiue to the next setup step.</p>
+</section>
+<section id="setup-the-receiver">
+<h3>2. Setup the Receiver<a class="headerlink" href="#setup-the-receiver" title="Permalink to this heading">#</a></h3>
+<p>The next page shows you the current receiver and allows you to set additional receiver parameters.</p>
+<a class="reference internal image-reference" href="../../_images/05a_skynet_addObs_receiver.png"><img alt="../../_images/05a_skynet_addObs_receiver.png" src="../../_images/05a_skynet_addObs_receiver.png" style="width: 546.4px; height: 296.0px;" /></a>
+<p>Most of the time the L-Band receiver will be installed. For that one you can choose between 2 resolution modes:</p>
+<ul class="simple">
+<li><p>Low Resolution Mode</p></li>
+<li><p>High Resolution Mode</p></li>
+</ul>
+<section id="low-resolution-mode">
+<h4>Low Resolution Mode<a class="headerlink" href="#low-resolution-mode" title="Permalink to this heading">#</a></h4>
+<p>This mode allows you four filter choices:</p>
+<ul class="simple">
+<li><p>HI: (1355 - 1435) MHz</p></li>
+<li><p>OH2: (1650 - 1750) MHz</p></li>
+<li><p>OH1: (1630 - 1730) MHz</p></li>
+<li><p>All: (1350 - 1750) MHz</p></li>
+</ul>
+<p>The channel width is 0.488 MHz.</p>
+<a class="reference internal image-reference" href="../../_images/05b_skynet_addObs_receiver_lowRes.png"><img alt="../../_images/05b_skynet_addObs_receiver_lowRes.png" src="../../_images/05b_skynet_addObs_receiver_lowRes.png" style="width: 601.6px; height: 322.40000000000003px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To activate <strong>Pulsar Mode</strong>, select the All filter as well as the box saying Pulsar Mode.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Bandwidth, Center Frequency, and Number of Channels are pre-set in the Low Resolution Mode.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Beware of RFI in the (1550 - 1610) MHz range.</p>
+</div>
+</section>
+<section id="high-resolution-mode">
+<h4>High Resolution Mode<a class="headerlink" href="#high-resolution-mode" title="Permalink to this heading">#</a></h4>
+<p>This mode allows you to specify two spectral windows (<strong>Center Frequency (MHz)</strong> and <strong>Secondary Frequency (MHz)</strong>).</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The separation between the two spectral windows may not be larger than 480 MHz.</p>
+</div>
+<a class="reference internal image-reference" href="../../_images/05c_skynet_addObs_receiver_highRes.png"><img alt="../../_images/05c_skynet_addObs_receiver_highRes.png" src="../../_images/05c_skynet_addObs_receiver_highRes.png" style="width: 601.6px; height: 322.40000000000003px;" /></a>
+<p>You can choose the number of channels (1024, 2048, 4096, 8192, 16384). This gives you the following channel widths at 21 cm:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id1">
+<caption><span class="caption-text">High Resolution Mode at 21 cm</span><a class="headerlink" href="#id1" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 35%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Number of Channels</p></th>
+<th class="head"><p>Channel width in frequency</p></th>
+<th class="head"><p>Channel width in velocity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1024</p></td>
+<td><p>15.26 kHz</p></td>
+<td><p>3.22 km/s</p></td>
+</tr>
+<tr class="row-odd"><td><p>2048</p></td>
+<td><p>7.63 kHz</p></td>
+<td><p>1.61 km/s</p></td>
+</tr>
+<tr class="row-even"><td><p>4096</p></td>
+<td><p>3.81 kHz</p></td>
+<td><p>0.81 km/s</p></td>
+</tr>
+<tr class="row-odd"><td><p>8192</p></td>
+<td><p>1.91 kHz</p></td>
+<td><p>0.40 km/s</p></td>
+</tr>
+<tr class="row-even"><td><p>16384</p></td>
+<td><p>0.95 kHz</p></td>
+<td><p>0.20 km/s</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>The bandwidth is fixed at 15.625 MHz</p></li>
+</ul>
+</div>
+<p>Finally click the orange <strong>Save and Continue</strong> button to contiue to the next setup step.</p>
+</section>
+</section>
+<section id="select-the-path">
+<h3>3. Select the Path<a class="headerlink" href="#select-the-path" title="Permalink to this heading">#</a></h3>
+<p>In the top of the next window you will see information on the <strong>Time Account</strong>. This lets you know how much credits you have available for your observations. One credit point corresponds to 1 second of observing time.</p>
+<p>Then you have four different choices to define the telescope path in the section <strong>Path Type</strong>:</p>
+<ul class="simple">
+<li><p>Track</p></li>
+<li><p>OnOff</p></li>
+<li><p>Daisy</p></li>
+<li><p>Map</p></li>
+</ul>
+<section id="track">
+<h4>Track<a class="headerlink" href="#track" title="Permalink to this heading">#</a></h4>
+<a class="reference internal image-reference" href="../../_images/06_skynet_addObs_path_track.png"><img alt="../../_images/06_skynet_addObs_path_track.png" src="../../_images/06_skynet_addObs_path_track.png" style="width: 546.4px; height: 340.8px;" /></a>
+<ul>
+<li><p>The telescope observes one point on the sky.</p></li>
+<li><p>This mode is ideal for observing spectral lines and pulsars</p></li>
+<li><dl class="simple">
+<dt><strong>Spectral lines</strong>:</dt><dd><ul class="simple">
+<li><p>typically set the integration time to 1s</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt><strong>pulsars</strong>:</dt><dd><ul>
+<li><dl>
+<dt>use 1/100th of the pulse period for the integration time</dt><dd><div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The minimum integration period for pulsars is 0.00013s.</p>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>the sample time is <span class="math notranslate nohighlight">\(2^n\left(\frac{1024}{5\times 10^8}\right)\)</span></dt><dd><ul class="simple">
+<li><p>the maximum allowed in the software is n=11 or sample=4.19s</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>for shorter integration times, the system will set sampling to the closest power of two submultiple, e.g. with <span class="math notranslate nohighlight">\(T_{int} = 0.0001s\)</span>, you will get 1.05 ms.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>Once you provide all required input, you will see the total time estimate and corresponding credits.</p>
+<a class="reference internal image-reference" href="../../_images/07_skynet_addObs_path_track_filled.png"><img alt="../../_images/07_skynet_addObs_path_track_filled.png" src="../../_images/07_skynet_addObs_path_track_filled.png" style="width: 544.8000000000001px; height: 393.6px;" /></a>
+</section>
+<section id="onoff">
+<h4>OnOff<a class="headerlink" href="#onoff" title="Permalink to this heading">#</a></h4>
+<a class="reference internal image-reference" href="../../_images/08_skynet_addObs_path_onOff.png"><img alt="../../_images/08_skynet_addObs_path_onOff.png" src="../../_images/08_skynet_addObs_path_onOff.png" style="width: 546.4px; height: 390.40000000000003px;" /></a>
+<ul class="simple">
+<li><p>If you’re doing continuum observations, this mode is good for measuring the flux density of an object.</p></li>
+<li><p>If you’re doing spectral line observations, this mode is good for observing fainter objects.</p></li>
+<li><p>Duration (30 - 60)s or (200 - 300) s for hydrogen in nearby galaxies.</p></li>
+<li><p>Set the offset to a few beamwidths. You can set the offset in a combination of <em>RA|Lng|Az</em> and <em>Dec|Lat|El</em>.</p></li>
+</ul>
+<p>Once you provide all required input, you will see the total time estimate and corresponding credits.</p>
+<a class="reference internal image-reference" href="../../_images/09_skynet_addObs_path_onOff_filled.png"><img alt="../../_images/09_skynet_addObs_path_onOff_filled.png" src="../../_images/09_skynet_addObs_path_onOff_filled.png" style="width: 544.8000000000001px; height: 445.6px;" /></a>
+</section>
+<section id="daisy">
+<h4>Daisy<a class="headerlink" href="#daisy" title="Permalink to this heading">#</a></h4>
+<a class="reference internal image-reference" href="../../_images/10_skynet_addObs_path_daisy.png"><img alt="../../_images/10_skynet_addObs_path_daisy.png" src="../../_images/10_skynet_addObs_path_daisy.png" style="width: 546.4px; height: 341.6px;" /></a>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Radius:</dt><dd><ul>
+<li><p>(90 - 120) arcmin</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Number of petals:</dt><dd><ul>
+<li><p>use 4 for a quicklook</p></li>
+<li><p>use 8 - 12 for a more complete map</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Integration time:</dt><dd><ul>
+<li><p>0.2s or 0.3s is usually good.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Duration:</dt><dd><ul>
+<li><p>180 s for 4 petals</p></li>
+<li><p>360 s for 8 petals</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>Once you provide all required input, you will see the total time estimate and corresponding credits.</p>
+<a class="reference internal image-reference" href="../../_images/11_skynet_addObs_path_daisy_filled.png"><img alt="../../_images/11_skynet_addObs_path_daisy_filled.png" src="../../_images/11_skynet_addObs_path_daisy_filled.png" style="width: 544.8000000000001px; height: 369.6px;" /></a>
+</section>
+<section id="map">
+<h4>Map<a class="headerlink" href="#map" title="Permalink to this heading">#</a></h4>
+<a class="reference internal image-reference" href="../../_images/12_skynet_addObs_path_map.png"><img alt="../../_images/12_skynet_addObs_path_map.png" src="../../_images/12_skynet_addObs_path_map.png" style="width: 485.6px; height: 767.2px;" /></a>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Raster Scans</dt><dd><ul>
+<li><dl class="simple">
+<dt>RALongMap:</dt><dd><ul>
+<li><p>sweep along the Right Ascension direction and step in Declination</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>DecLatMap:</dt><dd><ul>
+<li><p>sweep along the Declination direction and step in Right Ascension</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Map size:</dt><dd><ul>
+<li><p>specified in two ways <strong>Beam Widths</strong> or <strong>Degrees</strong></p></li>
+<li><p>maps should be at least 5 beam widths across, i.e. no smaller than 4x4 degrees (L-band beam is ~44 arcmin)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Gaps between sweeps:</dt><dd><ul>
+<li><p>for quickor large maps: 1/4 or 1/3</p></li>
+<li><p>for more detailed maps: 1/5 or 1/10</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Gap along sweeps:</dt><dd><ul>
+<li><p>keep this box checked</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Map depth:</dt><dd><ul>
+<li><p>do not increase to more than 2 seconds</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Total map time:</dt><dd><ul>
+<li><p>try to keep maps to 30min</p></li>
+<li><p>it is more efficient to make several smaller maps</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>Once you provide all required input, you will see the total time estimate and corresponding credits.</p>
+<a class="reference internal image-reference" href="../../_images/13_skynet_addObs_path_map_filled.png"><img alt="../../_images/13_skynet_addObs_path_map_filled.png" src="../../_images/13_skynet_addObs_path_map_filled.png" style="width: 456.8px; height: 764.0px;" /></a>
+<p>Finally click the orange <strong>Save and Continue</strong> button to contiue to the next setup step.</p>
+</section>
+</section>
+<section id="review-your-selection">
+<h3>4. Review your Selection<a class="headerlink" href="#review-your-selection" title="Permalink to this heading">#</a></h3>
+<a class="reference internal image-reference" href="../../_images/14_skynet_addObs_review.png"><img alt="../../_images/14_skynet_addObs_review.png" src="../../_images/14_skynet_addObs_review.png" style="width: 456.8px; height: 764.0px;" /></a>
+<p>When you have reviewed your selection and you are happy with all your settings, click the orange <strong>Submit</strong> button.</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><svg version="1.1" width="2.0em" height="2.0em" class="sd-octicon sd-octicon-terminal sd-text-success" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.25 12a.75.75 0 01-.22.53l-2.75 2.75a.75.75 0 01-1.06-1.06L7.44 12 5.22 9.78a.75.75 0 111.06-1.06l2.75 2.75c.141.14.22.331.22.53zm2 2a.75.75 0 000 1.5h5a.75.75 0 000-1.5h-5z"></path><path fill-rule="evenodd" d="M0 4.75C0 3.784.784 3 1.75 3h20.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0122.25 21H1.75A1.75 1.75 0 010 19.25V4.75zm1.75-.25a.25.25 0 00-.25.25v14.5c0 .138.112.25.25.25h20.5a.25.25 0 00.25-.25V4.75a.25.25 0 00-.25-.25H1.75z"></path></svg> How-To Guides</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../explanations/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><svg version="1.1" width="2.0em" height="2.0em" class="sd-octicon sd-octicon-repo sd-text-danger" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M3 2.75A2.75 2.75 0 015.75 0h14.5a.75.75 0 01.75.75v20.5a.75.75 0 01-.75.75h-6a.75.75 0 010-1.5h5.25v-4H6A1.5 1.5 0 004.5 18v.75c0 .716.43 1.334 1.05 1.605a.75.75 0 01-.6 1.374A3.25 3.25 0 013 18.75v-16zM19.5 1.5V15H6c-.546 0-1.059.146-1.5.401V2.75c0-.69.56-1.25 1.25-1.25H19.5z"></path><path d="M7 18.25a.25.25 0 01.25-.25h5a.25.25 0 01.25.25v5.01a.25.25 0 01-.397.201l-2.206-1.604a.25.25 0 00-.294 0L7.397 23.46a.25.25 0 01-.397-.2v-5.01z"></path></svg> Explanation Material</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#log-in-to-skynet">Log in to Skynet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-a-new-observation">Start a new observation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-up-your-observations">Setting up your observations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#select-your-target-source">1. Select your Target Source</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setup-the-receiver">2. Setup the Receiver</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#low-resolution-mode">Low Resolution Mode</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#high-resolution-mode">High Resolution Mode</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#select-the-path">3. Select the Path</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#track">Track</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#onoff">OnOff</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#daisy">Daisy</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#map">Map</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-your-selection">4. Review your Selection</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Green Bank Observatory
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Green Bank Observatory, A. Schmiedeke.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
