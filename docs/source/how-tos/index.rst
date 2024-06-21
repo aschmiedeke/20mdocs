@@ -30,10 +30,27 @@ These guides provide information on how to perform general and common tasks with
 
             20m observing
 
+    .. grid-item-card::
+        :shadow: md
+        :margin: 2 2 0 0 
+
+        **Gridding Instructions**
+
+        How to make image cubes out of 20m Telescope mapping observations
+
+        .. button-link:: general_guides/20m_gridding.html
+            :color: primary
+            :tooltip: Most basic steps to observe with the 20m Telescope.
+            :outline:
+            :click-parent:
+
+            20m gridding
+
 
 .. toctree::
     :hidden:
     :maxdepth: 3
 
     general_guides/20m_observing
+    general_guides/20m_gridding
 
