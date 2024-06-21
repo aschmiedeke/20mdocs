@@ -6,13 +6,13 @@ Gridding
 
 This tutorial shows how to make cubes out of 20m mapping observations.
 
-For this tutorial you will need
+.. admonition:: For this tutorial you will need
 
-* a working internet connection
-* at least 500 MB of free disk space
-* a `skynet <https://skynet.unc.edu/>`_ account
-* `grid20m <https://grid20m.readthedocs.io/>`_ installed (see `<https://grid20m.readthedocs.io/en/latest/getting-started/index.html#installation>`_)
-* a mapping observation with the 20m Telescope at Green Bank.
+    * a working internet connection
+    * at least 500 MB of free disk space
+    * a `skynet <https://skynet.unc.edu/>`_ account
+    * `grid20m <https://grid20m.readthedocs.io/>`_ installed (see `<https://grid20m.readthedocs.io/en/latest/getting-started/index.html#installation>`_)
+    * a mapping observation with the 20m Telescope at Green Bank.
 
 
 Data Retrieval
@@ -20,19 +20,19 @@ Data Retrieval
 
 Login to your skynet account. Select Radio Observing from the drop down menu.
 
-.. image:: material/00_mapping_radio_observing.png
+.. image:: material/00_gridding_radio_observing.png
 
 Go to your observations.
 
-.. image:: material/01_mapping_your_observations.png
+.. image:: material/01_gridding_your_observations.png
 
 Select an observation of the type "map" and follow the link on the ID column.
 
-.. image:: material/02_mapping_map_select.png
+.. image:: material/02_gridding_map_select.png
 
 Click on the "Download SDFITS" button. This will start the download of the mapping data.
 
-.. image:: material/03_mapping_download_sdfits.png
+.. image:: material/03_gridding_download_sdfits.png
 
 Save the data into the directory where you will work.
 
@@ -50,7 +50,7 @@ Use the command `grid20m` to generate data cubes
 
 The following image shows the outputs from the above command
 
-.. image:: material/04_mapping_terminal.png
+.. image:: material/04_gridding_terminal.png
 
 If the command finishes successfully you will now have four (the exact number depends on the data you are using) data cubes. For the above example these would be:
 
